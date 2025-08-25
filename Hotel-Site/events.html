@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hotel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>HOTEL LOBBY</h1>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" id="hamburger-icon">
+            <span onclick="openNavbar()"> ☰</span>
+        </button>
+    </header>  
+    <main>
+        <h2>Upcoming events</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <div class="icon-container">
+                    <img src="images/movie.jpg" alt="hotel">
+                </div><br>
+                <h3>Movie Nights</h3><br>
+                <p><b>3rd December 2024</b><br>Mark your calender for you will have one of the best expirience in our hotel where you will be having the awaited movie <b>Venom the Last Dance</b> in our room. So book a slot because tickets are not many.</p>
+            </div>
+        
+            <div class="service-card">
+                <div class="icon-container">
+                    <img src="images/swimmo2.jpg" alt="hotel">
+                </div><br>
+                <h3>Swimming Competitions</h3><br>
+               <p><b>14th December 2024</b><br> This awaited day is finaly here. The awaited competitions for swimming is finally here. So feel free to register and dont let your self not be filtered out by not registering. There are gifts to be won so lets meet there.</p>
+            </div>
+        
+            <div class="service-card">
+                <div class="icon-container">
+                    <img src="images/spa2.jpg" alt="hotel">
+                </div><br>
+                <h3>Spa Services</h3><br>
+                <p><b>22nd December</b><br>Come get to interact with the best of our skilled therapists offer a range of treatments designed to pamper and revitalize. Dont miss out our best services at an affordable price</p>
+            </div>
+        </div>
+        <section class id="contact-form">
+            <div class="form-container">
+                <h2>Your Details</h2>
+                <form action="#" >
+    
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="phone">Phone: </label>
+                    <input type="tel" id="phone" name="phone">
+    
+                    <label for="event">Select Event:</label>
+                    <select id="event" name="event" required>
+                        <option value="">Select an event</option>
+                        <option value="event1">Movie Nights</option>
+                        <option value="event2">Swimming Competitions</option>
+                        <option value="event3">Spa Services</option>
+                    </select><br>
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <p>
+                &copy; 2024 Your Company. All rights reserved.
+                </p>
+        </footer>
+    </main>
+    
+</body>
+</html>
